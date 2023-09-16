@@ -83,7 +83,9 @@ plt.title('Гистограмма количества преступлений 
 plt.xlabel('Race')
 plt.ylabel('Количество преступлений')
 plt.grid(True)
+
 #Добавление подписей с количеством преступлений к столбцам
+
 for i, count in enumerate(crime_counts_by_race):
     ax.annotate(str(count), (i, count), ha='center', va='bottom')
 plt.show()
@@ -104,6 +106,7 @@ df_2020_2022 = df[(df['year'] >= 2020) & (df['year'] <= 2022)]
 crime_by_state = df_2020_2022.groupby('state').size().reset_index(name='crime_count')
 
 ## Создание интерактивной карты "Преступления в 2020-2022 годах по штатам США"
+
 fig = px.choropleth(locations=crime_by_state['state'], locationmode="USA-states", color=crime_by_state['crime_count'],
                     scope="usa", color_continuous_scale="Viridis",
                     title="Преступления в 2020-2022 годах по штатам")
