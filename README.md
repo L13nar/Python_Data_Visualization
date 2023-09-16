@@ -60,6 +60,7 @@ plt.show()
 
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/График-количества-преступлений-по-годам.png)
 
+
 #Создание словаря с цветами для каждой расы
 colors = {
     'Asian': 'yellow',
