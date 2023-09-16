@@ -56,6 +56,7 @@ plt.xlabel('Год')
 plt.ylabel('Количество преступлений')
 plt.grid(True)
 plt.show()
+![](https://github.com/L13nar/Python_data_visualization/blob/main/График%20количества%20преступлений%20по%20годам)
 
 # Создание словаря с цветами для каждой расы
 colors = {
