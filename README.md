@@ -1,6 +1,7 @@
 # Python_data_visualization
 ### Проект по визуализации преступлений в США: загрузка, очистка данных, группировка по штатам и визуализация на интерактивной карте для анализа преступлений в разные годы.
 
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -111,3 +112,4 @@ fig.show()
 
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/Преступления%20в%202020-2022%20годах%20по%20штатам.png)
 
+```
