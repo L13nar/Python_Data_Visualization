@@ -67,6 +67,7 @@ colors = {
     'White': 'blue'}
 # Группировка данных по расам и подсчет количества преступлений
 crime_counts_by_race = df_trimmed['race'].value_counts()
+
 # Построение гистограммы
 plt.figure(figsize=(12, 6))
 colors_to_use = [colors.get(race, 'gray') for race in crime_counts_by_race.index]
@@ -79,6 +80,8 @@ plt.grid(True)
 for i, count in enumerate(crime_counts_by_race):
     ax.annotate(str(count), (i, count), ha='center', va='bottom')
 plt.show()
+
+
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/Гистограмма-количества-преступлений-по-расам-_до-2022-года_.png)
 
 crime_counts_by_race
@@ -88,9 +91,6 @@ grouped_data.head()
 
 import pandas as pd
 import plotly.express as px
-# Загрузка данных из DataFrame
-# Здесь предполагается, что у вас уже есть DataFrame под названием "df_trimmed" с нужными данными.
-# Если нет, замените его на имя вашего DataFrame.
 df = df_trimmed
 # Фильтрация данных для 2020, 2021 и 2022 годов
 df_2020_2022 = df[(df['year'] >= 2020) & (df['year'] <= 2022)]
