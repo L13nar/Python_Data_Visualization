@@ -79,7 +79,7 @@ plt.grid(True)
 for i, count in enumerate(crime_counts_by_race):
     ax.annotate(str(count), (i, count), ha='center', va='bottom')
 plt.show()
-![](https://github.com/L13nar/Python_data_visualization/blob/main/Гистограмма%20количества%20преступлений%20по%20расам%20(до%202022%20года))
+![](https://github.com/L13nar/Python_data_visualization/blob/main/Гистограмма-количества-преступлений-по-расам-_до-2022-года_.png)
 
 crime_counts_by_race
 
