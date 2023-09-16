@@ -61,7 +61,6 @@ plt.show()
 
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/График.png)
 
-
 #Создание словаря с цветами для каждой расы
 colors = {
     'Asian': 'yellow',
