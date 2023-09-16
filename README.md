@@ -59,7 +59,8 @@ plt.ylabel('Количество преступлений')
 plt.grid(True)
 plt.show()
 
-![](https://github.com/L13nar/Python_data_visualization/blob/main/График.png)
+![]("https://github.com/L13nar/Python_data_visualization/blob/main/График.png")
+
 
 #Создание словаря с цветами для каждой расы
 colors = {
