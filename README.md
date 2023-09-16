@@ -59,7 +59,7 @@ plt.ylabel('Количество преступлений')
 plt.grid(True)
 plt.show()
 
-![](https://github.com/L13nar/Python_data_visualization/blob/main/График-количества-преступлений-по-годам.png)
+![](https://github.com/L13nar/Python_data_visualization/blob/main/График.png)
 
 
 #Создание словаря с цветами для каждой расы
@@ -90,8 +90,7 @@ for i, count in enumerate(crime_counts_by_race):
     ax.annotate(str(count), (i, count), ha='center', va='bottom')
 plt.show()
 
-![](https://github.com/L13nar/Python_data_visualization/blob/main/Преступления%20в%202020-2022%20годах%20по%20штатам.png)
-
+![](https://github.com/L13nar/Python_data_visualization/blob/main/Гистограмма.png)
 
 crime_counts_by_race
 
