@@ -103,6 +103,8 @@ fig = px.choropleth(locations=crime_by_state['state'], locationmode="USA-states"
                     title="Преступления в 2020-2022 годах по штатам")
 fig.update_geos(fitbounds="locations")
 fig.show()
-![](https://github.com/[{username}/{repository}/raw/{branch}/{path}](https://github.com/L13nar/Python_data_visualization/blob/main/Преступления%20в%202020-2022%20годах%20по%20штатам.png)/image.png)
+
+![](https://github.com/L13nar/Python_data_visualization/blob/main/Преступления%20в%202020-2022%20годах%20по%20штатам.png)
+
 
 https://github.com/L13nar/Python_data_visualization/blob/main/Преступления%20в%202020-2022%20годах%20по%20штатам.png
