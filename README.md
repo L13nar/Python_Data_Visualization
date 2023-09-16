@@ -1,4 +1,4 @@
-## Python_data_visualization
+# Python_data_visualization
 Проект по визуализации преступлений в США: загрузка, очистка данных, группировка по штатам и визуализация на интерактивной карте для анализа преступлений в разные годы.
 
 import pandas as pd
@@ -49,7 +49,7 @@ df_trimmed ['year'] = df_trimmed ['date'].dt.year
 #Группировка данных по годам и подсчет количества преступлений
 crime_counts_by_year = df_trimmed ['year'].value_counts().sort_index()
 
-# Построение линейного графика 'Количества преступлений по годам'
+## Построение линейного графика 'Количества преступлений по годам'
 plt.figure(figsize=(12, 6))
 plt.plot(crime_counts_by_year.index, crime_counts_by_year.values, marker='o', linestyle='-')
 plt.title('График количества преступлений по годам')
@@ -71,7 +71,7 @@ colors = {
 
 crime_counts_by_race = df_trimmed['race'].value_counts()
 
-# Построение гистограммы "Гистограмма количества преступлений по расам (до 2022 года)"
+## Построение гистограммы "Гистограмма количества преступлений по расам (до 2022 года)"
 plt.figure(figsize=(12, 6))
 colors_to_use = [colors.get(race, 'gray') for race in crime_counts_by_race.index]
 ax = crime_counts_by_race.plot(kind='bar', color=colors_to_use)
@@ -99,7 +99,7 @@ df_2020_2022 = df[(df['year'] >= 2020) & (df['year'] <= 2022)]
 #Группировка данных по штатам и подсчет преступлений
 crime_by_state = df_2020_2022.groupby('state').size().reset_index(name='crime_count')
 
-# Создание интерактивной карты "Преступления в 2020-2022 годах по штатам США"
+## Создание интерактивной карты "Преступления в 2020-2022 годах по штатам США"
 fig = px.choropleth(locations=crime_by_state['state'], locationmode="USA-states", color=crime_by_state['crime_count'],
                     scope="usa", color_continuous_scale="Viridis",
                     title="Преступления в 2020-2022 годах по штатам")
