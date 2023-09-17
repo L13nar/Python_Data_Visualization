@@ -61,7 +61,7 @@ plt.show()
 ```
 
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/График.png)
-
+```python
 #Создание словаря с цветами для каждой расы
 colors = {
     'Asian': 'yellow',
@@ -74,7 +74,7 @@ colors = {
 #Группировка данных по расам и подсчет количества преступлений
 
 crime_counts_by_race = df_trimmed['race'].value_counts()
-``python
+
 ## Построение гистограммы "Гистограмма количества преступлений по расам (до 2022 года)"
 plt.figure(figsize=(12, 6))
 colors_to_use = [colors.get(race, 'gray') for race in crime_counts_by_race.index]
@@ -89,7 +89,7 @@ plt.grid(True)
 for i, count in enumerate(crime_counts_by_race):
     ax.annotate(str(count), (i, count), ha='center', va='bottom')
 plt.show()
-
+```
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/Гистограмма.png)
 
 crime_counts_by_race
