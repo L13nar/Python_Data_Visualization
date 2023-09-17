@@ -38,7 +38,7 @@ max_date = df_trimmed['date'].max()
 print(max_date)
 
 #2022-12-31
-
+```python
 import matplotlib.pyplot as plt
 
 #Преобразование колонки 'date' в тип datetime
