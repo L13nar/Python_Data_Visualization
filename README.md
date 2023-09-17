@@ -58,9 +58,9 @@ plt.xlabel('Год')
 plt.ylabel('Количество преступлений')
 plt.grid(True)
 plt.show()
+```
 
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/График.png)
-
 
 #Создание словаря с цветами для каждой расы
 colors = {
@@ -96,7 +96,7 @@ crime_counts_by_race
 
 grouped_data = df_trimmed.groupby(['year', 'race']).size().reset_index(name='crimes')
 grouped_data.head()
-
+```python
 import pandas as pd
 import plotly.express as px
 df = df_trimmed
@@ -114,5 +114,7 @@ fig.update_geos(fitbounds="locations")
 fig.show()
 ```
 ![](https://github.com/L13nar/Python_data_visualization/blob/main/Преступления%20в%202020-2022%20годах%20по%20штатам.png)
+
+```
 
 
